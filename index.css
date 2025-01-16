@@ -1,0 +1,55 @@
+/* General Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(4, 13, 173), #7165b5);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/01.jpg);
+  
+}
+
+/* Root Container */
+#root {
+  width: 100%;
+  max-width: 2400px;
+  height: 300px;
+  width: 800px;
+  min-height: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility Classes */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    margin: 10px;
+  }
+}

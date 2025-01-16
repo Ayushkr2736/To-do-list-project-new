@@ -1,0 +1,154 @@
+/* Header Styles */
+header {
+  background-color:grey;
+  color:white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: #ffdd57;
+}
+
+header nav button {
+  background: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header nav button:hover {
+  background: #d32f2f;
+}
+
+/* Main App Container */
+.app-container {
+  padding: 20px;
+}
+
+/* Login Page */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px); /* Header height adjustment */
+}
+
+.login-page h1 {
+  font-size: 2.5rem;
+  color: #0078d4;
+  margin-bottom: 20px;
+}
+
+.login-page button {
+  background-color: #0078d4;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background-color: #005a9e;
+}
+
+/* To-Do Page */
+.todo-page {
+  padding: 20px;
+}
+
+.task-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input-container input,
+.task-input-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f3eded;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.task-input-container button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: rgb(242, 237, 237);
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-input-container button:hover {
+  background-color: #005a9e;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.task-item button {
+  background-color: #e53935;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #c62828;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0078d4;
+  color: white;
+  font-size: 1rem;
+}
